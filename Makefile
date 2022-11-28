@@ -1,9 +1,6 @@
 .PHONY: all
 all: format test build
 
-.PHONY: new
-new: clean build
-
 .PHONY: format
 format:
 	clang-format src/* include/* -i
